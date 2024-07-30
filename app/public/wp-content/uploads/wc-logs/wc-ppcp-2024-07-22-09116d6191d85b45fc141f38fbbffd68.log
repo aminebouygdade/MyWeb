@@ -1,0 +1,148 @@
+2024-07-22T12:58:07+00:00 ERROR API error: Array
+(
+    [url] => https://paypalconnect.paymentplugins.com/v1/customer
+    [method] => POST
+    [http_status] => 400
+    [request] => Array
+(
+    [environment] => sandbox
+    [request] => Array
+        (
+            [tracking_id] => F7o4VDtYlFXq1ZugSvvgHYUgjjH5TUpp
+            [partner_config_override] => Array
+                (
+                    [return_url] => https://paypalconnect.paymentplugins.com/v1/redirect?redirectUrl=http%3A%2F%2Fmyweb.local%2Fwp-admin%2Fadmin.php%3Fpage%3Dwc-settings%26tab%3Dcheckout%26section%3Dppcp_api%26_connect_nonce%3D9482f0cadc%26environment%3Dsandbox
+                )
+
+            [operations] => Array
+                (
+                    [0] => Array
+                        (
+                            [operation] => API_INTEGRATION
+                            [api_integration_preference] => Array
+                                (
+                                    [rest_api_integration] => Array
+                                        (
+                                            [integration_method] => PAYPAL
+                                            [integration_type] => FIRST_PARTY
+                                            [first_party_details] => Array
+                                                (
+                                                    [features] => Array
+                                                        (
+                                                            [0] => PAYMENT
+                                                            [1] => REFUND
+                                                            [2] => VAULT
+                                                            [3] => TRACKING_SHIPMENT_READWRITE
+                                                        )
+
+                                                    [seller_nonce] => 3xaKus7O1npT7e65G8OT2QL6ngBYsG2AYIv7rNkQkaOgV0wlyG8cDamoR1ZBL8Gn
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [products] => Array
+                (
+                    [0] => EXPRESS_CHECKOUT
+                )
+
+            [legal_consents] => Array
+                (
+                    [0] => Array
+                        (
+                            [type] => SHARE_DATA_CONSENT
+                            [granted] => 1
+                        )
+
+                )
+
+        )
+
+)
+
+    [error] => Array
+        (
+            [message] => cURL error 28: SSL connection timeout
+        )
+
+)
+
+2024-07-22T13:04:59+00:00 ERROR API error: Array
+(
+    [url] => https://api-m.paypal.com/v1/notifications/webhooks
+    [method] => POST
+    [http_status] => 400
+    [request] => Array
+(
+    [url] => http://myweb.local/wp-json/wc-ppcp/v1/webhook/production
+    [event_types] => Array
+        (
+            [0] => Array
+                (
+                    [name] => PAYMENT.CAPTURE.COMPLETED
+                )
+
+            [1] => Array
+                (
+                    [name] => PAYMENT.CAPTURE.DENIED
+                )
+
+            [2] => Array
+                (
+                    [name] => PAYMENT.CAPTURE.REFUNDED
+                )
+
+            [3] => Array
+                (
+                    [name] => CHECKOUT.ORDER.APPROVED
+                )
+
+            [4] => Array
+                (
+                    [name] => CHECKOUT.ORDER.PROCESSED
+                )
+
+            [5] => Array
+                (
+                    [name] => CUSTOMER.DISPUTE.CREATED
+                )
+
+            [6] => Array
+                (
+                    [name] => CUSTOMER.DISPUTE.RESOLVED
+                )
+
+        )
+
+)
+
+    [error] => Array
+        (
+            [name] => VALIDATION_ERROR
+            [message] => Invalid data provided
+            [debug_id] => b373a32bf0114
+            [information_link] => https://developer.paypal.com/docs/api/webhooks/#errors
+            [details] => Array
+                (
+                    [0] => Array
+                        (
+                            [field] => url
+                            [location] => body
+                            [issue] => Not a valid webhook URL
+                        )
+
+                )
+
+            [links] => Array
+                (
+                )
+
+        )
+
+)
+

@@ -1,0 +1,560 @@
+2024-07-27T15:12:07+00:00 ERROR API error: Array
+(
+    [url] => https://api-m.paypal.com/v2/checkout/orders
+    [method] => POST
+    [http_status] => 422
+    [request] => Array
+(
+    [intent] => CAPTURE
+    [payer] => Array
+        (
+            [name] => Array
+                (
+                    [given_name] => amine
+                    [surname] => bouygdade
+                )
+
+            [address] => Array
+                (
+                    [address_line_1] => RES EL FADEL IMM 3 NO 104
+                    [address_line_2] => 
+                    [admin_area_1] => mamar
+                    [admin_area_2] => Marrakech
+                    [postal_code] => 40070
+                    [country_code] => MA
+                )
+
+            [email_address] => aminebouyg@gmail.com
+        )
+
+    [purchase_units] => Array
+        (
+            [0] => Array
+                (
+                    [amount] => Array
+                        (
+                            [value] => 299.00
+                            [currency_code] => MAD
+                            [breakdown] => Array
+                                (
+                                    [item_total] => Array
+                                        (
+                                            [currency_code] => MAD
+                                            [value] => 299.00
+                                        )
+
+                                    [shipping] => Array
+                                        (
+                                            [currency_code] => MAD
+                                            [value] => 0.00
+                                        )
+
+                                    [tax_total] => Array
+                                        (
+                                            [value] => 0.00
+                                            [currency_code] => MAD
+                                        )
+
+                                    [discount] => Array
+                                        (
+                                            [value] => 0.00
+                                            [currency_code] => MAD
+                                        )
+
+                                    [handling] => Array
+                                        (
+                                            [currency_code] => MAD
+                                            [value] => 0.00
+                                        )
+
+                                )
+
+                        )
+
+                    [items] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => Smartwatch 10 - Red
+                                    [quantity] => 1
+                                    [unit_amount] => Array
+                                        (
+                                            [currency_code] => MAD
+                                            [value] => 299.00
+                                        )
+
+                                    [sku] => SWN001-10
+                                    [description] => Product ID: 30. Variation ID: 32
+                                )
+
+                        )
+
+                    [shipping] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [full_name] => amine bouygdade
+                                )
+
+                            [address] => Array
+                                (
+                                    [address_line_1] => RES EL FADEL IMM 3 NO 104
+                                    [address_line_2] => 
+                                    [admin_area_1] => mamar
+                                    [admin_area_2] => Marrakech
+                                    [postal_code] => 40070
+                                    [country_code] => MA
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [application_context] => Array
+        (
+            [shipping_preference] => SET_PROVIDED_ADDRESS
+            [return_url] => http://myweb.local/wc-api/ppcp_checkout_return/?_checkoutnonce=95b270f9b4
+            [cancel_url] => http://myweb.local/checkout/
+            [brand_name] => B
+        )
+
+)
+
+    [error] => Array
+        (
+            [name] => UNPROCESSABLE_ENTITY
+            [details] => Array
+                (
+                    [0] => Array
+                        (
+                            [issue] => CURRENCY_NOT_SUPPORTED
+                            [links] => Array
+                                (
+                                )
+
+                            [description] => Currency code is not currently supported. Please refer https://developer.paypal.com/docs/integration/direct/rest/currency-codes/ for list of supported currency codes.
+                        )
+
+                )
+
+            [message] => The requested action could not be performed, semantically incorrect, or failed business validation.
+            [debug_id] => db6872e38c7f9
+            [links] => Array
+                (
+                    [0] => Array
+                        (
+                            [href] => https://developer.paypal.com/docs/api/orders/v2/#error-CURRENCY_NOT_SUPPORTED
+                            [rel] => information_link
+                        )
+
+                )
+
+        )
+
+)
+
+2024-07-27T15:12:07+00:00 ERROR Error creating PayPal order. Msg: Currency code is not currently supported. Please refer https://developer.paypal.com/docs/integration/direct/rest/currency-codes/ for list of supported currency codes. Params: Array
+(
+    [intent] => CAPTURE
+    [payer] => Array
+        (
+            [name] => Array
+                (
+                    [given_name] => amine
+                    [surname] => bouygdade
+                )
+
+            [address] => Array
+                (
+                    [address_line_1] => RES EL FADEL IMM 3 NO 104
+                    [address_line_2] => 
+                    [admin_area_1] => mamar
+                    [admin_area_2] => Marrakech
+                    [postal_code] => 40070
+                    [country_code] => MA
+                )
+
+            [email_address] => aminebouyg@gmail.com
+        )
+
+    [purchase_units] => Array
+        (
+            [0] => Array
+                (
+                    [amount] => Array
+                        (
+                            [value] => 299.00
+                            [currency_code] => MAD
+                            [breakdown] => Array
+                                (
+                                    [item_total] => Array
+                                        (
+                                            [currency_code] => MAD
+                                            [value] => 299.00
+                                        )
+
+                                    [shipping] => Array
+                                        (
+                                            [currency_code] => MAD
+                                            [value] => 0.00
+                                        )
+
+                                    [tax_total] => Array
+                                        (
+                                            [value] => 0.00
+                                            [currency_code] => MAD
+                                        )
+
+                                    [discount] => Array
+                                        (
+                                            [value] => 0.00
+                                            [currency_code] => MAD
+                                        )
+
+                                    [handling] => Array
+                                        (
+                                            [currency_code] => MAD
+                                            [value] => 0.00
+                                        )
+
+                                )
+
+                        )
+
+                    [items] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => Smartwatch 10 - Red
+                                    [quantity] => 1
+                                    [unit_amount] => Array
+                                        (
+                                            [currency_code] => MAD
+                                            [value] => 299.00
+                                        )
+
+                                    [sku] => SWN001-10
+                                    [description] => Product ID: 30. Variation ID: 32
+                                )
+
+                        )
+
+                    [shipping] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [full_name] => amine bouygdade
+                                )
+
+                            [address] => Array
+                                (
+                                    [address_line_1] => RES EL FADEL IMM 3 NO 104
+                                    [address_line_2] => 
+                                    [admin_area_1] => mamar
+                                    [admin_area_2] => Marrakech
+                                    [postal_code] => 40070
+                                    [country_code] => MA
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [application_context] => Array
+        (
+            [shipping_preference] => SET_PROVIDED_ADDRESS
+            [return_url] => http://myweb.local/wc-api/ppcp_checkout_return/?_checkoutnonce=95b270f9b4
+            [cancel_url] => http://myweb.local/checkout/
+            [brand_name] => B
+        )
+
+)
+
+2024-07-27T15:15:53+00:00 ERROR API error: Array
+(
+    [url] => https://api-m.paypal.com/v2/checkout/orders
+    [method] => POST
+    [http_status] => 422
+    [request] => Array
+(
+    [intent] => CAPTURE
+    [payer] => Array
+        (
+            [name] => Array
+                (
+                    [given_name] => amine
+                    [surname] => bouygdade
+                )
+
+            [email_address] => aminebouyg@gmail.com
+        )
+
+    [purchase_units] => Array
+        (
+            [0] => Array
+                (
+                    [amount] => Array
+                        (
+                            [value] => 598.00
+                            [currency_code] => MAD
+                            [breakdown] => Array
+                                (
+                                    [item_total] => Array
+                                        (
+                                            [currency_code] => MAD
+                                            [value] => 598.00
+                                        )
+
+                                    [shipping] => Array
+                                        (
+                                            [currency_code] => MAD
+                                            [value] => 0.00
+                                        )
+
+                                    [tax_total] => Array
+                                        (
+                                            [value] => 0.00
+                                            [currency_code] => MAD
+                                        )
+
+                                    [discount] => Array
+                                        (
+                                            [value] => 0.00
+                                            [currency_code] => MAD
+                                        )
+
+                                    [handling] => Array
+                                        (
+                                            [currency_code] => MAD
+                                            [value] => 0.00
+                                        )
+
+                                )
+
+                        )
+
+                    [items] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => Smartwatch 10 - Red
+                                    [quantity] => 1
+                                    [unit_amount] => Array
+                                        (
+                                            [currency_code] => MAD
+                                            [value] => 299.00
+                                        )
+
+                                    [sku] => SWN001-10
+                                    [description] => Product ID: 30. Variation ID: 32
+                                )
+
+                            [1] => Array
+                                (
+                                    [name] => Smartwatch 10 - white
+                                    [quantity] => 1
+                                    [unit_amount] => Array
+                                        (
+                                            [currency_code] => MAD
+                                            [value] => 299.00
+                                        )
+
+                                    [sku] => SWN001-10
+                                    [description] => Product ID: 30. Variation ID: 33
+                                )
+
+                        )
+
+                    [shipping] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [full_name] => amine bouygdade
+                                )
+
+                            [address] => Array
+                                (
+                                    [address_line_1] => RES EL FADEL IMM 3 NO 104
+                                    [address_line_2] => 
+                                    [admin_area_1] => mamar
+                                    [admin_area_2] => Marrakech
+                                    [postal_code] => 40070
+                                    [country_code] => MA
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [application_context] => Array
+        (
+            [shipping_preference] => SET_PROVIDED_ADDRESS
+            [return_url] => http://myweb.local/wc-api/ppcp_checkout_return/?_checkoutnonce=95b270f9b4
+            [cancel_url] => http://myweb.local/checkout/
+            [brand_name] => B
+        )
+
+)
+
+    [error] => Array
+        (
+            [name] => UNPROCESSABLE_ENTITY
+            [details] => Array
+                (
+                    [0] => Array
+                        (
+                            [issue] => CURRENCY_NOT_SUPPORTED
+                            [links] => Array
+                                (
+                                )
+
+                            [description] => Currency code is not currently supported. Please refer https://developer.paypal.com/docs/integration/direct/rest/currency-codes/ for list of supported currency codes.
+                        )
+
+                )
+
+            [message] => The requested action could not be performed, semantically incorrect, or failed business validation.
+            [debug_id] => 4477fbc198aee
+            [links] => Array
+                (
+                    [0] => Array
+                        (
+                            [href] => https://developer.paypal.com/docs/api/orders/v2/#error-CURRENCY_NOT_SUPPORTED
+                            [rel] => information_link
+                        )
+
+                )
+
+        )
+
+)
+
+2024-07-27T15:15:53+00:00 ERROR Error creating PayPal order. Msg: Currency code is not currently supported. Please refer https://developer.paypal.com/docs/integration/direct/rest/currency-codes/ for list of supported currency codes. Params: Array
+(
+    [intent] => CAPTURE
+    [payer] => Array
+        (
+            [name] => Array
+                (
+                    [given_name] => amine
+                    [surname] => bouygdade
+                )
+
+            [email_address] => aminebouyg@gmail.com
+        )
+
+    [purchase_units] => Array
+        (
+            [0] => Array
+                (
+                    [amount] => Array
+                        (
+                            [value] => 598.00
+                            [currency_code] => MAD
+                            [breakdown] => Array
+                                (
+                                    [item_total] => Array
+                                        (
+                                            [currency_code] => MAD
+                                            [value] => 598.00
+                                        )
+
+                                    [shipping] => Array
+                                        (
+                                            [currency_code] => MAD
+                                            [value] => 0.00
+                                        )
+
+                                    [tax_total] => Array
+                                        (
+                                            [value] => 0.00
+                                            [currency_code] => MAD
+                                        )
+
+                                    [discount] => Array
+                                        (
+                                            [value] => 0.00
+                                            [currency_code] => MAD
+                                        )
+
+                                    [handling] => Array
+                                        (
+                                            [currency_code] => MAD
+                                            [value] => 0.00
+                                        )
+
+                                )
+
+                        )
+
+                    [items] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => Smartwatch 10 - Red
+                                    [quantity] => 1
+                                    [unit_amount] => Array
+                                        (
+                                            [currency_code] => MAD
+                                            [value] => 299.00
+                                        )
+
+                                    [sku] => SWN001-10
+                                    [description] => Product ID: 30. Variation ID: 32
+                                )
+
+                            [1] => Array
+                                (
+                                    [name] => Smartwatch 10 - white
+                                    [quantity] => 1
+                                    [unit_amount] => Array
+                                        (
+                                            [currency_code] => MAD
+                                            [value] => 299.00
+                                        )
+
+                                    [sku] => SWN001-10
+                                    [description] => Product ID: 30. Variation ID: 33
+                                )
+
+                        )
+
+                    [shipping] => Array
+                        (
+                            [name] => Array
+                                (
+                                    [full_name] => amine bouygdade
+                                )
+
+                            [address] => Array
+                                (
+                                    [address_line_1] => RES EL FADEL IMM 3 NO 104
+                                    [address_line_2] => 
+                                    [admin_area_1] => mamar
+                                    [admin_area_2] => Marrakech
+                                    [postal_code] => 40070
+                                    [country_code] => MA
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [application_context] => Array
+        (
+            [shipping_preference] => SET_PROVIDED_ADDRESS
+            [return_url] => http://myweb.local/wc-api/ppcp_checkout_return/?_checkoutnonce=95b270f9b4
+            [cancel_url] => http://myweb.local/checkout/
+            [brand_name] => B
+        )
+
+)
+
